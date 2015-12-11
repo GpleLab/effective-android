@@ -1,13 +1,13 @@
 <div class="panel panel-warning">
 	<div class="panel-heading">
-		<h3 class="panel-title"><span class="badge">4</span> Interface Seggregation</h3>
+		<h3 class="panel-title"><span class="badge">4</span> Interface Segregation</h3>
 	</div>
 	<div class="panel-body content">
-		Clients should not be forced to depend upon interfaces that they don't use
+		하나의 인터페이스에 모든 메서드를 선언해 상속 받는 클래스에서 사용하지 않는 메서드까지 강제로 구현하게 하면 안된다.
 		<hr>
 		<ul>
-			<li>Create specific interfaces for each feature. Assume that you have a listener which is optional, make it another interface</li>
-			<li>Split interfaces</li>
+			<li>각가의 기능 별로 인터페이스를 나누어 정의해야 한다. 옵셔널한 리스너를 가지게 하라. Assume that you have a listener which is optional, make it another interface</li>
+			<li>인페이스를 나눠라.</li>
 		</ul>
 		<hr>
 		<a href='http://en.wikipedia.org/wiki/Interface_segregation_principle'>wikipedia</a> | <a href='http://www.oodesign.com/interface-segregation-principle.html'>oodesign</a>
