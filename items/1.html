@@ -1,53 +1,19 @@
-
-
 <div class="panel panel-primary">
 	<div class="panel-heading">
 		<h3 class="panel-title"><span class="badge">1</span> Single Responsibility</h3>
 	</div>
 	<div class="panel-body content">
-		Each entities should have only one responsibility
+		각 개체(entity)들은 오직 하나만의 의무(responsibility)를 가져야한다. 즉, 개체가 가진 속성은 다른 의무에 대해 알 수 없어야하며, 연산은 다른 의무를 수행해선 안된다.
 		<hr>
 		<ul>
-			<li>Fragment is a layout and it should not contain network calls</li>
-			<li>Every activity should be responsible only for one thing, ie: registration activity, home page activitiy, splash activity etc</li>
-			<li>Adapters should not make any network call</li>
-			<li>Methods should do only one thing</li>
-			<li>Fragments should not open other fragments nor activity. Fragment should just return the result to the caller activity and let the activity to decide what to do next</li>
+			<li> Fragment 는 레이아웃(Fragment 의 기본적인 의무)이다. 이것은 네트워크 요청(전혀 다른 의무)을 포함하면 안된다. 즉, 이것은 네트워크 요청(전혀 다른 의무)에 대해서도 몰라야한다. </li>
+			<li> Activity 는 오직 한가지(역할)에만 책임을 갖는다. ie: registration activity, home page activitiy, splash activity etc</li>
+			<li> Adapter 는 네트워크 요청을 가져서는 안된다. </li>
+			<li> Method 는 오직 하나의 일을 수행한다. </li>
+			<li> Fragment 는 다른 Fragment나 Activity 를 열어선 안된다. Fragment 는 그저 자신을 호출한 Activity 에 결과를 반환할 뿐, 그 다음에 무엇을 할 것인지는 Activity 가 결정하도록 해야한다.</li>
 		</ul>
 		<hr>
 		<a href='http://en.wikipedia.org/wiki/Single_responsibility_principle'>wikipedia</a> |  
 		<a href='http://java.dzone.com/articles/single-responsibility'>java.dzone</a>
 	</div>
-
-<!-- 	<div class="panel-footer">
-		<button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg">Read more</button>
-	</div> -->
-</div>
-
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="gridSystemModalLabel">Single responsibility</h4>
-			</div>
-			<div class="modal-body">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12">
-							<p>Each entities should have only one responsibility.</p>
-							<hr>
-							<p>Let's assume you have one activity and 2 fragments: LoginFragment and RegistrationFragment. 
-
-<pre class="prettyprint">class
-</pre>
-
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!-- /.modal-content -->
-	</div>
-</div>
 </div>
