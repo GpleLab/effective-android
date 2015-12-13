@@ -4,16 +4,16 @@
 	</div>
 	<div class="panel-body content">
 		<ul>
-			<li>High-level modules should not depend on low-level modules. Both should depend on abstractions.
+			<li>High-level 모듈은 low-level 모듈에 의존하면 안된다. 서로는 abstraction 으로 의존성을 가져야한다.
 			</li>
-			<li>Abstractions should not depend on details. Details should depend on abstractions.</li>
+			<li>Abstraction 은 구체화된 것들에 의존하면 안된다. 구체화된 것들은 abstraction 에 의존해야한다.</li>
 		</ul>
 		<hr>
 		<ul>
-			<li>To communicate between activity and fragment, create an interface and use it</li>
-			<li>To communicate between adapters and fragment/activity, use interface</li>
-			<li>As a thumb rule, always relies on abstraction.</li>
-			<li>Use abstractions as much as possible while defining variables,parameters.</li>
+			<li>Activity(low-level 모듈)와 Fragment(high-level 모듈)가 통신하기 위해서는, interface 를 만들고 사용해라. 단, Activity 로 부터 특정 Fragment 로의 통신은 해당 Fragment 가 활성화되어있는 것이 보장되지 않으므로, EventBus 를 사용하는 것이 좋다.</li>
+			<li>Fragment/Activity(low-level 모듈)과 Adapter(high-level 모듈)가 통신하기 위해서는, interface 를 만들고 사용해라.</li>
+			<li>최고 우선 순위로써, 항상 abstraction에 의존해라!</li>
+			<li>변수와 파라미터를 정의하는 동안 가능한 한 많이 abstraction를 이용해라.</li>
 		</ul>
 		<hr>
 		<a href='http://en.wikipedia.org/wiki/Dependency_inversion_principle'>wikipedia</a> | <a href='http://www.oodesign.com/dependency-inversion-principle.html'>oodesign</a>

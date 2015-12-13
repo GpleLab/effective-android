@@ -3,12 +3,12 @@
 		<h3 class="panel-title"><span class="badge">7</span> Aim for Loosely Coupling</h3>
 	</div>
 	<div class="panel-body content">
-		Each component should have less depend on other components
+		각 안드로이드 컴포넌트들은 다른 컴포넌트들에 거의 의존하지 않다시피해야한다.
 		<hr>
 		<ul>
-			<li>Use EventBus to communicate from activity to fragment. Thus you don't have to rely specific fragment</li>
-			<li>Use EventBus to deliver network responses</li>
-			<li>Avoid casting as much as possible. ie: In fragment, if you call MainActivity, you will be tightly coupled with the main activity class. Avoid doing this. Use abstractions such as interface</li>
+			<li>Activity 로 부터 Fragment 로 통신할 때는 EventBus 를 사용해라. 그래서 Activity 가 특정 Fragment 에 의존하지 않도록 한다. </li>
+			<li>네트워크 응답을 전달하기 위해서는 EventBus 를 사용해라.</li>
+			<li>형 변환은 가능한 한 피해라. ie: Fragment 에서 만약 MainActivity 의 함수를 호출한다면, 이것은 MainActivity 클래스에 대해 매우 밀접하게 연관이 생긴다. 이것은 피해야하고, interface 같은 abstraction를 사용해라</li>
 		</ul>
 		<hr>
 		<a href='http://en.wikipedia.org/wiki/Loose_coupling'>wikipedia</a> | <a href='http://java.dzone.com/articles/coupling-and-cohesion-failed'>java.dzone</a>
