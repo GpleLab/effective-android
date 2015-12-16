@@ -4,15 +4,15 @@
 	</div>
 	<div class="panel-body content">
 		<ul>
-			<li>final declared fields cannot be reassigned</li>
-			<li>final declared methods cannot be overriden</li>
-			<li>final declared classes cannot be inherinted</li>
+			<li>final 은 field 가 재할당되지 않도록한다.</li>
+			<li>final 은 method 가 override 되지 않도록한다.</li>
+			<li>final 은 class 가 더이상 확장되지 않도록한다.</li>
 		</ul>
 		<hr>
 		<ul>
-			<li>Ask yourself why you should not use final for the variable declaration</li>
-			<li>Ask yourself why you should use final for method and class declaration</li>
-			<li>For readability, I prefer to not use final for paramaters and local variables</li>
+			<li>field 에서 final 을 쓰면 안되는 경우를 제외하고는 항상 final 을 붙여라</li>
+			<li>method 와 class 에서 final 을 써야만 하는 경우를 제외하고는 항상 final 을 붙여라</li>
+			<li>가독성을 위해, parameter 와 local variable 에 final 을 붙이는 것은 선호하지 않는다. 그런데, Java 에서는 final 을 붙이는 것은 가독성을 떨어뜨릴 수 있지만, Kotlin 에서는 가독성을 떨어뜨리지 않는 듯하다. </li>
 		</ul>
 		<hr>
 		<a href='http://stackoverflow.com/questions/137868/using-final-modifier-whenever-applicable-in-java'>stackoverflow</a> | <a href='http://www.javaperformancetuning.com/tips/final.shtml'>javaperformancetuning</a>
