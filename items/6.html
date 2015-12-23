@@ -3,13 +3,13 @@
 		<h3 class="panel-title"><span class="badge">6</span> High Cohesion</h3>
 	</div>
 	<div class="panel-body content">
-		All related elements should be together
+		모든 관련된 구성 요소들은 함께 존재해야 한다.
 		<hr>
 		<ul>
-			<li>Do not create a different constant class for the bundle/sharedpreferences keys. Instead put it to related class. Use static factory method.</li>
-			<li>Class should contain only members related to its responsibility</li>
-			<li>Ask yourself, if the method/variables should be in this class, if the answer is no, then put it into the correct class or create a class for that</li>
-			<li>Remember to put common methods to the utility classes</li>
+			<li>bundle/sharedpreferences의 키를 위해 각각 다른 상수 클래스를 선언하지 마라. 대신에 키를 관련된 클래스에 넣고, static factory method를 사용해라.(Instead put it to related class. Use static factory method.)</li>
+			<li>클래스의 맴버는 그 클래스의 역할과 관련이 있는 것만 포함하고 있어야한다.</li>
+			<li>이 메서드, 변수가 이 클래스 안에 존재해야하는가라는 물음에 답이 'No'라면 그 때 그것을 다른 적절한 클래스에 넣거나 그 것을 위해 새로운 클래스를 만들어라.</li>
+			<li>일반적인 메서드(common methods)는 유틸리티 클래스에 넣어라.</li>
 		</ul>
 		<hr>
 		<a href='http://en.wikipedia.org/wiki/Cohesion_%28computer_science%29'>wikipedia</a> | <a href='http://java.dzone.com/articles/coupling-and-cohesion-failed'>java.dzone</a>

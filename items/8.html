@@ -7,9 +7,9 @@
 		<p>Inner class is an element of the class</p>
 		<ul>
 			<li>It increases the time & space complexity</li>
-			<li>Might causes the memory leaks because the inner class always need enclosing class as well</li>
-			<li>Use static class for the view holder in the adapter</li>
-			<li>Always use static for the nested classes if you are not using any member of the enclosing class</li>
+			<li>이너 클래스는 항상 자신을 감싸고 있는 클래스의 레퍼런스를 필요로 하기 때문에 메모리 누수의 원인이될 수 있다.</li>
+			<li>Adapter 안의 view holder 클래스는 static 클래스를 사용하라.</li>
+			<li>감싸고있는 클래스의 맴버에  / Always use static for the nested classes if you are not using any member of the enclosing class</li>
 		</ul>
 		<hr>
 		<a href='http://programmers.stackexchange.com/questions/238782/why-prefer-non-static-inner-classes-over-static-ones'>stackexchange</a> | <a href='http://stackoverflow.com/questions/1353309/java-static-vs-non-static-inner-class'>stackoverflow</a>
