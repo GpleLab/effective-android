@@ -1,13 +1,13 @@
 <div class="panel panel-danger">
 	<div class="panel-heading">
-		<h3 class="panel-title"><span class="badge">17</span> Use switch where possible</h3>
+		<h3 class="panel-title"><span class="badge">17</span> 가급적 switch 구문을 사용해라</h3>
 	</div>
 	<div class="panel-body content">
 		<ul>
-			<li>With java 7, String can be used in the switch cases</li>
-			<li>You can use switch in onClick(), I prefer ButterKnife to split methods, more readable with that way</li>
-			<li>Use enums/constants to make readable cases</li>
-			<li>Use "fall through" approach. When the case is the same with the next one, you can put a comment and tell that it will fall through. This will help the next developer to understand that this is done intentinally.</li>
+			<li>Java 7 부터 String 도 switch-case 문에서 사용가능하다.</li>
+			<li>onClick 에서 switch 를 사용해서 분기하여 클릭에 맞는 적절한 함수를 호출할 수 있다. ButterKnife 나 Android Annotation 으로 함수를 나누는 방법도 있는데 이것은 가독성을 더 향상하는 방법이다.</li>
+			<li>case 는 enum 이나 constant 로 가독성을 향상시킬 수 있다.</li>
+			<li>다른 경우에서 같은 행동을 할 경우에는 "fall through" 방법을 이용해라. "fall through" 방법은 break 없이 여러 케이스를 연달아서 쓰는 방법을 말한다. 그리고 주석을 간단히 달아두면 좋다. 이것은 다른 개발자들이 의도한대로 이해하도록 할 것이다.</li>
 		</ul>
 		<hr>
 		<a href="http://programmers.stackexchange.com/questions/15820/should-i-use-switch-statements-or-long-if-else-chains">stackexchange</a>
